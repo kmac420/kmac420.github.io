@@ -11,31 +11,90 @@
         top: 50%;
         left: 50%;
         margin-left: -75px; /* margin is -0.5 * dimension */
-        margin-top: -75px; 
+        margin-top: -75px;
         text-align: center;
       }
 
       #inner {
         display: table;
-        margin: 0 auto; 
+        margin: 0 auto;
       }
-
     </style>
-
+    <link rel="stylesheet" href="https://js.qubit.sh/v1/assets/quid.css" />
+    <script src="https://js.qubit.sh/v1/client.js"></script>
   </head>
   <body>
-
-    <div class='fullscreenDiv'>
-      <div class="center"><h1>kef.ca</h1><br />
+    <div class="fullscreenDiv">
+      <div class="center">
+        <h1>kef.ca</h1>
+        <br />
         <div id="inner">
-          <a href="https://github.com/kmac420" target="_blank"><img style="vertical-align:text-bottom;" src="github.png" width="23" height="23" alt="GitHub account"></a>&nbsp;&nbsp;
-          <a href="https://twitter.com/kevingmccall" target="_blank"><img style="vertical-align:text-bottom;" src="twitter-128.png" width="23" height="23" alt="Twitter account"></a>&nbsp;&nbsp;
-          <a href="https://www.linkedin.com/in/kevingmccall" target="_blank"><img style="vertical-align:text-bottom" src="linkedin.png" width="23" height="23" alt="LinkedIn profile"></a>&nbsp;&nbsp;
-          <a href="kevin-mccall.asc" target="_blank"><img style="vertical-align:text-bottom" src="gpgtools-icon.png" width="23" height="23" alt="Download public key"></a>&nbsp;&nbsp;
-          <a href="kevin-mccall.pdf" target="_blank"><img style="vertical-align:text-bottom" src="resume.png" width="23" height="23" alt="Download resume"></a>
+          <a href="https://github.com/kmac420" target="_blank"
+            ><img
+              style="vertical-align:text-bottom;"
+              src="github.png"
+              width="23"
+              height="23"
+              alt="GitHub account"/></a
+          >&nbsp;&nbsp;
+          <a href="https://twitter.com/kevingmccall" target="_blank"
+            ><img
+              style="vertical-align:text-bottom;"
+              src="twitter-128.png"
+              width="23"
+              height="23"
+              alt="Twitter account"/></a
+          >&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/kevingmccall" target="_blank"
+            ><img
+              style="vertical-align:text-bottom"
+              src="linkedin.png"
+              width="23"
+              height="23"
+              alt="LinkedIn profile"/></a
+          >&nbsp;&nbsp;
+          <a href="kevin-mccall.asc" target="_blank"
+            ><img
+              style="vertical-align:text-bottom"
+              src="gpgtools-icon.png"
+              width="23"
+              height="23"
+              alt="Download public key"/></a
+          >&nbsp;&nbsp;
+          <a href="kevin-mccall.pdf" target="_blank"
+            ><img
+              style="vertical-align:text-bottom"
+              src="resume.png"
+              width="23"
+              height="23"
+              alt="Download resume"
+          /></a>
         </div>
       </div>
     </div>
-
+    <script type="text/javascript">
+      quid.createFAB({
+        apiKey: "kt-W0OIUC0G8XNFARW9UAS83PVZOZPRO0GM",
+        baseURL: "https://app.qubit.sh",
+        currency: "CAD",
+        productID: "floating-tip",
+        productName: "Support Online Publishing Inc.",
+        productURL: "www.read-dracula-online.com",
+        productDescription: "Support my blog.",
+        position: "right",
+        minAmount: "0.01",
+        maxAmount: "2",
+        amount: "1",
+        text: "Slide the Q to leave a tip!",
+        paidText: "Thanks for the tip!",
+        palette: "blue",
+        demo: false,
+        reminder: false,
+        onSuccessCallback: function() {
+          console.log("Payment Succeeded");
+        }
+      });
+    </script>
+  </body>
   </body>
 </html>
