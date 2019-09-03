@@ -72,29 +72,27 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      quid.createFAB({
-        apiKey: "kt-W0OIUC0G8XNFARW9UAS83PVZOZPRO0GM",
-        baseURL: "https://app.qubit.sh",
-        currency: "CAD",
-        productID: "floating-tip",
-        productName: "Support Online Publishing Inc.",
-        productURL: "www.read-dracula-online.com",
-        productDescription: "Support my blog.",
-        position: "right",
-        minAmount: "0.01",
-        maxAmount: "2",
-        amount: "1",
-        text: "Slide the Q to leave a tip!",
-        paidText: "Thanks for the tip!",
-        palette: "blue",
-        demo: false,
-        reminder: false,
-        onSuccessCallback: function() {
-          console.log("Payment Succeeded");
-        }
-      });
-    </script>
+<script type="text/javascript">
+  quid.createFAB({
+    apiKey: "kt-W0OIUC0G8XNFARW9UAS83PVZOZPRO0GM",
+    baseURL: "https://app.qubit.sh",
+    currency: "CAD",
+    productID: "floating-tip",
+    productName: "Support Online Publishing Inc.",
+    productURL: "www.read-dracula-online.com",
+    productDescription: "Support my blog.",
+    position: "left",
+    minAmount: "0.01",
+    maxAmount: "1",
+    amount: "1.5",
+    text: "Slide the Q to leave a tip!",
+    paidText: "Thanks for the tip!",
+    palette: "blue",
+    demo: true,
+    reminder: true,
+    onSuccessCallback: function() { console.log('Payment Succeeded'); },
+  });
+  </script>
   </body>
   </body>
 </html>
